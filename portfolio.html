@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>CHRISTINA TOVAR: A Mom Who Codes</title>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.12/css/all.css" integrity="sha384-G0fIWCsCzJIMAVNQPfjH08cyYaUtMwjJwqiRKxxE/rx96Uroj1BtIQ6MLJuheaO9" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/main.css">
+  <link href="https://fonts.googleapis.com/css?family=Raleway:400,900" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Work+Sans:200,400" rel="stylesheet">
+</head>
+
+<!--The body goes here-->
+<body>
+<!--The Header flex-container goes here and will have 3 columns and take 100% page width-->
+  <header id="grad1">
+<!--My logo element will be centered in this col div and take 10-15% of the flex-header-grid-->
+  <div class="col" id="portfolio-logo">
+    <img class="logo" src="images/full-color-logo-80x105.png" alt="Mom Avatar">
+  </div>
+<!-- My site title and tagline will be centered in this col div and take 70% of the flex-header-grid-->
+  <div class="col" id="center-head">
+    <h1>CHRISTINA TOVAR</h1>
+    <h4>A Mom Who Codes</h4>
+  </div>
+<!--The 3rd column of the flex-header-grid will contain font awesome nav bars and take 10-15% of the flex-header-grid-->
+  <div class="col right-nav">
+    <i class="fas fa-bars"></i>
+  </div>
+  </header>
+
+<!--Main section area -->
+<main id="welcome">
+  <section id="hero-feature">
+    <h2>Welcome to my Website!</h2>
+<!--This div will hold 1 col div containing the Hero image element -->
+<!--    <div class="flex-grid-full-width">-->
+<!--<div class="col hero">-->
+      <figure id="hero-figure">
+<!--why is there an extra div? How do I code this correctly to select a sour image size? -->
+        <picture id="hero-media">
+          <source media="(min-width: 100px)" srcset="images/hero-400x275.png"/>
+          <source media="(min-width: 600px)" srcset="images/hero-600x400.png"/>
+          <source media="(min-width:800px)" srcset="images/hero-1200x800.png"/>
+            <img id="hero-backup" src="images/hero-400x275.png" alt="Hero Image"/>
+        </picture>
+           <figcaption>Placeholder Hero Image. Original by Christina Tovar-Hamernik</figcaption>
+      </figure>
+  </section>
+    <aside>
+<!-- To Do - add an h2 text "Design Colors" -->
+      <div id="aside-headline">
+        <h2>Design Colors</h2>
+      </div>
+      <div id="mockup-colors">
+      <img class="mockup-image" id="mockup-image1"
+      src="images/4EC3C9-color-sample.png" alt="Mockup Color Image1"/>
+        <p class="mockup-text" id="mockup-p1">#4EC3C9</p>
+      <img class="mockup-image" id="mockup-image2"
+      src="images/398080-color-sample.png" alt="Mockup Color Image2"/>
+        <p class="mockup-text" id="mockup-p2">#398080</p>
+      <img class="mockup-image" id="mockup-image3"
+      src="images/BC5E5E-color-sample.png" alt="Mockup Color Image3"/>
+        <p class="mockup-text" id="mockup-p3">#BC5E5E</p>
+      <img class="mockup-image" id="mockup-image4"
+      src="images/804141-color-sample.png" alt="Mockup Color Image4"/>
+        <p class="mockup-text" id=mockup-text4>#804141</p>
+      </div>
+    </aside>
+  </main>
+<!-- The content section will contain article sections with nano-degree projects -->
+<section id="content">
+  <h2>Featured Work</h2>
+  <article class="article-container" id="flex-grid-thirds">
+<!--each article div will display a nano-degree project-->
+    <div class="article-col" id="article1">
+      <figure>
+        <picture>
+          <source media="(min-width: 100px)" srcset="images/water-400x275.png">
+          <source media="(min-width: 600px)" srcset="images/water-600x400.png">
+            <img src="images/water-400x275.png" alt="Placeholder Image">
+        </picture>
+          <figcaption>Placeholder image. Original by Christina Tovar-Hamernik</figcaption>
+            <h3 class="project-title">Restaurant Reviews App</h3>
+              <p class="project-description">This paragraph will describe the project. The paragraph will contain two to three sentences. The paragraph will contain a contact me link.</p>
+      </figure>
+    </div>
+    <div class="article-col" id="article2">
+      <figure>
+        <picture>
+          <source media="(min-width: 100px)" srcset="images/brick-400x275.png">
+          <source media="(min-width: 600px)" srcset="images/brick-600x400.png">
+            <img src="images/brick-400x275.png" alt="Placeholder Image">
+        </picture>
+          <figcaption>Placeholder image. Original by Christina Tovar-Hamernik</figcaption>
+            <h3 class="project-title">Memory Game</h3>
+              <p class="project-description">This paragraph will describe the project. The paragraph will contain two to three sentences. The paragraph will contain a contact me link.</p>
+      </figure>
+    </div>
+    <div class="article-col" id="article3">
+      <figure>
+        <picture>
+          <source media="(min-width: 100px)" srcset="images/EC2124-red-400x275.png">
+          <source media="(min-width: 600px)" srcset="images/EC2124-red-600x400.png">
+            <img src="images/EC2124-red-400x275.png" alt="Placeholder Image">
+        </picture>
+          <figcaption>Placeholder image. Original by Christina Tovar-Hamernik</figcaption>
+            <h3 class="project-title">Feed Reader Testing</h3>
+              <p class="project-description">This paragraph will describe the project. The paragraph will contain two to three sentences. The paragraph will contain a contact me link.</p>
+      </figure>
+    </div>
+  </article>
+</section>
+ <!--The footer container will always be 100% page width-->
+<footer id="contact">
+<!--The #email-contact div contains my avatar, #email-header h2 text-->
+<!--The #email-contact div will be 100% page width up to 599px and 50% page width at 600px-->
+  <div class="footer-col" id="email-contact">
+    <div class="footer-content" id="avatar-text">
+<!--this is the avatar image-->
+      <img src="images/avatar-profile-100x100.png" id="contact-img" alt="my contact image">
+<!--This h2 goes below the avatar image-->
+        <h2 id="email-header">Hi! Contact me for more information.</h2>
+    </div>
+<!--The #email-link div contains my #envelope href envelope image and my href email address-->
+    <div class="footer-content" id="email-link">
+<!--this is the envelope image-->
+      <a href="mailto:ctovarhamernik@gmail.com"><img src="images/envelope-65x65.png" id="envelope" alt="envelope icon" height="50"></a>
+<!--this is the hreg email address-->
+      <a href="mailto:ctovarhamernik@gmail.com" id="email-address">ctovarhamernik@gmail.com</a>
+    </div>
+  </div>
+<!--To Do - how to make the <hr> render as a gradient -->
+  <!--  <hr>  -->
+ <!--The #socialmedia-contact div will be 100% page width up to 599px and 50% page width at 600px-->
+  <div class="footer-col" id="socialmedia-contact">
+    <div class="footer-content" id="socialmedia-text">
+      <h2 id="socialmedia-header">Or, connect with me on social media.</h2>
+    </div>
+    <div class="footer-content" id="socialmedia-icons">
+      <ul>
+        <li><a href="https://twitter.com/CTovarHamernik" target="_blank"><img src="images/twitter-65x65.png" alt="twitter icon" height="50"/></a></li>
+        <li><a href="https://www.instagram.com" target="_blank"><img src="images/instagram-65x65.png" alt="instagram icon" height="50"/></a></li>
+        <li><a href="https://www.linkedin.com/in/Christina-Tovar-Hamernik" target="_blank"><img src="images/linkedin-65x65.png" alt="linkedin icon" height="50"/></a></li>
+<!--To Do - add github link
+               <li><a href="https://github.com/StinaTovar" target="_blank"><img src="images/github-65x65.png" alt="github icon" height="50px"/></a></li>-->
+      </ul>
+    </div>
+  </div>
+</footer>
+</body>
+    </html>

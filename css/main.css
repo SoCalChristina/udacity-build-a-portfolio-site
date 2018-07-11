@@ -1,0 +1,631 @@
+* {
+  box-sizing: border-box;
+}
+
+/* This is the body*/
+body {
+  font: 1em 'Work Sans', sans-serif;
+  line-height: 1.5em;
+  color: #5c0009;
+  background-color: #ebebeb;
+  margin: auto;
+/* Do I need a min-width? for example..
+    min-width: 375px;*/
+}
+
+/* header flex container -- 3 div columns */
+header {
+  display: -webkit-flex; /* Safari */
+  display: inline-flex;
+  flex-direction: row;
+  flex-basis: 100%;
+  width: 100%;
+  height: 125px;
+  border-bottom: .2em solid #5c0009;
+  margin: auto;
+  line-height: normal;
+  background: linear-gradient(to right, white , #398080);
+  background-color: #ebebeb; /* For browsers that do not support gradients */
+}
+
+/** general header col div styles **/
+
+/*Header col 1 of 3 - This flexbox contains the logo image*/
+#portfolio-logo {
+  display: flex;
+  flex-basis: 15%;
+  padding-left: 0.5em;
+  align-self: center;
+  max-width: 100px;
+  max-height: 100px;
+}
+
+/* Header col 2 of 3 - This flexbox contains the site title and subtitle */
+#center-head {
+  display: flex;
+  flex-flow: column;
+  flex-basis: 75%;
+  max-width: 75%;
+  padding: 0.5em;
+  line-height: 1.5em;
+  justify-content: space-around;
+  align-items: stretch;
+}
+
+/*site title styels/
+
+/*site title - My name*/
+#center-head h1 {
+  font-size: 1.2em;
+}
+
+/*site sub-title - My tagline*/
+#center-head h4 {
+  font-weight: lighter;
+}
+
+/** col 3 of 3 - My nav menu icon goes here**/
+.right-nav {
+  display: flex;
+  flex-flow: column;
+  flex-basis: 10%;
+  max-width: 10%;
+  padding: 0 0.5em;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+
+/* font awesome menu bars */
+/* TODO style an animated slide in menu with href links to sections on page */
+.fas .fa-bars {
+  -webkit-align-self: center; /* Safari 7.0+ */
+  align-self: center;
+  color: #5c0009;
+  align-self: flex-end;
+}
+
+/*Main section - fullwidth*/
+#weclome {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 100%;
+  width: 100%;
+}
+/* hero section */
+#hero-feature {
+  flex-basis: 100%;
+  width: 100%;
+  padding: 0 0.5em;
+  align-self: center;
+  margin: auto;
+}
+
+#hero-feature h2 {
+   text-align: center;
+   width: 100%;
+   flex-basis: 100%;
+}
+
+/* Main section figure */
+#hero-figure {
+  display: flex;
+  flex-direction: column;
+   flex-basis: 100%;
+  margin: auto;
+}
+
+/* Main section hero image*/
+#hero-media {
+   display: flex;
+  flex-basis: 100%;
+  border: 0.05em solid black;
+  box-shadow: .1em .1em .5em grey;
+  margin: auto;
+}
+
+#hero-media img {
+  display: flex;
+  flex-basis: 100%;
+  width: 100%;
+}
+
+/* responsive backup image */
+#hero-backup {
+  border: 0.05em solid black;
+  box-shadow: .1em .1em .5em grey;
+  flex-basis: 100%;
+}
+
+/* Main section figcaption */
+#hero-figure figcaption {
+  flex-basis: 100%;
+  margin: auto;
+  padding: 0.5em 0;
+}
+
+/* TODO: add p tag with text */
+
+#design-title {
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+  border-top: 0.02em solid black;
+}
+
+/* mockup colors aside section */
+aside {
+  display: flex;
+  flex-flow: column;
+  flex-basis: 100%;
+  width: 100%;
+  padding: 0 1em;
+  border-top: 0.02em solid #804141;
+  align-items: center;
+  justify-content: center;
+}
+
+#aside-headline {
+  width: 100%;
+  text-align: center
+}
+
+#mockup-colors {
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+}
+
+.mockup-image {
+  max-width: 50px;
+  max-height: 50px;
+  border: 0.05em solid black;
+  box-shadow: .1em .1em .5em grey;
+  padding: 0.2em;
+  margin: 0.2em;
+  align-self: center;
+}
+.mockup-text {
+  font: #5c0009;
+  align-self: center;
+}
+
+#content {
+  width: 100%;
+  padding: 0 1em;
+  border-top: .2em solid #5c0009;
+}
+#content h2 {
+  text-align: center;
+  padding-top: .5em;
+}
+
+#article3 {
+  border: none;
+}
+
+/*This section container holds 3 article divs for the portfolio area**/
+.article-container {
+  display: -webkit-flex; /* Safari */
+  display: flex;
+  flex-direction: column;
+  flex-basis: 100%;
+  justify-content: flex-start;
+  margin: auto;
+}
+
+.article-container h2 {
+  font-size: 1.4em;
+  text-align: center;
+  padding-top: 1em;
+}
+
+.article-col {
+  display: -webkit-flex; /* Safari */
+  display: flex;
+  flex-direction: column;
+  flex-basis: 100%;
+  border-bottom: .2em solid #5c0009;
+}
+
+#article1 figure, #article2 figure, #article3 figure {
+  display:flex;
+  flex-direction: column;
+  flex-basis:100%;
+  margin: auto;
+  padding:.5em;
+}
+
+.article-col img {
+  display: flex;
+  width: 100%;
+  align-self: center;
+}
+
+.article-container .project-title {
+  margin: .5em .0;
+}
+
+.article-container .project-description {
+margin-left: 0.5em;
+    font-family: 'Raleway', sans-serif;
+}
+
+#contact {
+  display: -webkit-flex; /* Safari */
+  display: inline-flex;
+  flex-direction: column;
+  flex-basis: 100%;
+  margin: auto;
+  align-content: center;
+  border-top: 1em solid #5c0009;
+  color:#5c0009;
+  background-color: #cccccc;
+  line-height: normal;
+  width: 100%;
+}
+
+.footer-col, .footer-content {
+  padding: 0.5em;
+  display: -webkit-flex; /* Safari */
+  display: flex;
+  flex-direction: column;
+  flex-basis: 100%;
+  margin: auto;
+  align-content: center;
+}
+
+#email-header, #socialmedia-header {
+  padding: 0 1.5em;
+  flex-basis: 100%;
+}
+
+#contact .footer-col {
+  align-self: center;
+  align-content:center;
+  justify-content:center;
+  margin: auto;
+  display:flex;
+  flex-basis:100%;
+}
+
+/**styles for footer left column**/
+#email-contact {
+}
+
+#avatar-text {
+  display: flex;
+  flex-flow: column;
+}
+
+h2 #contact, #email-header, #socialmedia-header {
+  display: flex;
+  flex-basis: 100%;
+  text-align: center;
+  margin: auto;
+  align-self:center;
+}
+
+#socialmedia-icons li {
+  display: inline-flex;
+  margin: auto;
+  align-self:center;
+}
+/** the contact-img is my avatar **/
+#contact-img {
+  display:flex;
+  align-self: center;
+  align-content:center;
+  justify-content:center;
+  margin: auto;
+}
+
+/*style the div containing the envelope image and email link**/
+#email-link {
+
+}
+/** this envelope icon is a clickable link that opens a window with my email address**/
+#envelope {
+  display:flex;
+  align-self: center;
+  align-content:center;
+  justify-content:center;
+  margin: auto;
+}
+
+#email-address {
+color:#398080;
+}
+
+a {
+  color: #804141;
+  font: bold 1.2em;
+  align-self: center;
+  align-content:center;
+  justify-content:center;
+  margin: auto;
+  text-decoration:none;
+  padding-bottom: 0.5em;
+}
+
+/**styles for right side column**/
+#socialmedia-contact {
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  margin: auto;
+  padding-top:2em;
+}
+
+.footer-content {
+}
+
+.footer-col #socialmedia-icons {
+padding-top: 1em;
+}
+
+#socialmedia-icons {
+  display:flex;
+  flex-basis:100%;
+  justify-content:center;
+}
+
+#contact li, #contact img {
+  display: inline-block;
+  align-self: stretch;
+  margin: auto;
+}
+
+
+/*Breakpoint 1 300px
+Breakpoint 2 400px
+Breakpoint 3 700px
+Breakpoint 4 (iPad Air): 800px*/
+/**
+
+/* Page break at 300 */
+@media screen and (min-width: 300px) and (max-width: 699px) {
+  aside {
+    display: flex;
+    flex-flow: row;
+    flex-wrap: wrap;
+    flex-basis: 100%;
+    width: 100%;
+    padding: 0 0.5em;
+    align-content: stretch;
+    justify-content: space-around;
+    padding-bottom: 1em;
+}
+
+  #aside-headline {
+    display: block;
+    text-align: center;
+}
+
+  #mockup-colors {
+    display: inline-flex;
+    flex-flow: row;
+}
+
+  .mockup-image {
+    max-width: 40px;
+    max-height: 40px;
+    align-self: center;
+}
+
+  #mockup-image3, #mockup-p3 {
+    display: none;
+}
+
+  .mockup-text {
+    display: flex;
+    align-self: auto;
+    font-size: 0.5em;
+    padding: .5em;
+ }
+}
+
+@media screen and (min-width: 450px) and (max-width: 499px) {
+  aside {
+    padding-bottom: 1em;
+  }
+
+  .mockup-image {
+    max-width: 50px;
+    max-height: 50px;
+    align-self: auto;
+    padding: 0.2em;
+  }
+
+  #article2, #article3 {
+    padding-top: 1em;
+  }
+}
+
+
+@media screen and (min-width: 500px) {
+  aside {
+      padding-bottom: 1em;
+  }
+
+  .mockup-image {
+    max-width: 60px;
+    max-height: 60px;
+    border: 0.05em solid black;
+    box-shadow: .1em .1em .5em grey;
+    align-self: auto;
+    padding: 0.2em;
+  }
+
+  .mockup-text {
+    display: flex;
+    align-self: auto;
+    font-size: 1em;
+  }
+  #article2, #article3 {
+    padding-top: 1em;
+  }
+}
+
+/* Page break at 600px */
+@media screen and (min-width: 600px) {
+/*Main section - fullwidth*/
+  #welcome {
+    display: -webkit-flex; /* Safari */
+    display: inline-flex;
+    flex-flow: row;
+    flex-basis: 100%;
+    width: 100%;
+    margin: auto;
+  }
+
+  #hero-feature {
+    order: 2;
+    flex: 75%;
+    width:100%;
+    padding: 0 1em;
+    justify-content: center;
+    align-items: flex-start;
+    margin-right: 10%;
+  }
+
+    #hero-feature h2 {
+      text-align: center;
+      margin-top: 0;
+    }
+
+/* Main section figure */
+    #hero-figure {
+        display: flex;
+        flex-direction: column;
+        flex-basis: 100%;
+        align-self: stretch;
+    }
+
+/* Main section hero image*/
+    #hero-media {
+      display: flex;
+      flex-basis: 100%;
+      border: 0.05em solid black;
+      box-shadow: .1em .1em .5em grey;
+      width: 100%;
+    }
+
+/* responsive backup image */
+    #hero-backup {
+      border: 0.05em solid black;
+      box-shadow: .1em .1em .5em grey;
+      flex-basis: 100%;
+      width: 100%;
+    }
+
+/* Main section figcaption */
+  #hero-feature figcaption {
+  }
+
+  #design-title {
+    display: none;
+  }
+
+/* mockup colors aside section */
+  aside {
+    display: flex;
+    flex-flow: column;
+    flex-basis: 25%;
+    width: 25%;
+    padding: 1em;
+    align-items: center;
+    justify-content: center;
+    border: none;
+  }
+
+  #mockup-colors {
+    flex-flow: column;
+  }
+
+  .mockup-image {
+    max-width: 50px;
+    max-height: 50px;
+    border: 0.05em solid black;
+    box-shadow: .1em .1em .5em grey;
+  }
+
+  .mockup-text {
+    font: 0.5em #5c0009;
+    align-self: center;
+  }
+
+  #content {
+    display: flex;
+    flex-flow: row;
+    flex-wrap: wrap;
+    flex-basis: 100%;
+    height:auto;
+    padding: 0 0.5em;
+  }
+
+  .article-container {
+    display: flex;
+    flex-flow: row;
+    flex-basis: 100%;
+    height:auto;
+    padding: 0 0.5em;
+  }
+
+  #content h2 {
+    flex-flow: row;
+    flex-basis: 100%;
+    width: 100%;
+    text-align: center;
+}
+
+  .article-col {
+    flex-basis: 33.333%;
+    align-items:flex-start;
+    justify-content:flex-start;
+    padding: 0 0.5em;
+    border:none;
+  }
+
+  #article1, #article2, #article3 {
+    align-self: flex-start;
+    flex-basis: 33.333%;
+  }
+
+  #article2, #article3 {
+    padding-top: 0;
+  }
+
+  #contact {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    width: 100%;
+    margin: auto;
+    font-size: 1em;
+  }
+
+  .footer-col #email-contact, .footer-col #footer-email {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 50%;
+  }
+
+  #contact img {
+    max-height: 50px;
+  }
+
+  #avatar-text img {
+    display: none;
+  }
+
+  #avatar-text h2 {
+    font-size: 1.5em;
+  }
+
+  #footer-content {
+    flex-basis:50%;
+  }
+
+  #email-header {
+    flex-basis: 50%;
+}
