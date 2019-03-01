@@ -11,6 +11,8 @@
 </head>
 
 <!--The body goes here-->
+<!-- I used https://www.w3schools.com/css/tryit.asp?filename=trycss3_flexbox_website2 and
+  https://www.w3schools.com/css/css3_flexbox.aspas as references for planning my flexbox page layout -->
 <body>
 <!--The Header flex-container goes here and will have 3 columns and take 100% page width-->
   <header id="grad1">
@@ -24,6 +26,7 @@
     <h4>A Mom Who Codes</h4>
   </div>
 <!--The 3rd column of the flex-header-grid will contain font awesome nav bars and take 10-15% of the flex-header-grid-->
+<!-- TODO create an animated slide in menu with href links to the specified page areas -->
   <div class="col right-nav">
     <i class="fas fa-bars"></i>
   </div>
@@ -34,21 +37,22 @@
   <section id="hero-feature">
     <h2>Welcome to my Website!</h2>
 <!--This div will hold 1 col div containing the Hero image element -->
-<!--    <div class="flex-grid-full-width">-->
-<!--<div class="col hero">-->
+<!-- I used https://www.w3schools.com/tags/tag_figure.asp to plan my figure sections -->
       <figure id="hero-figure">
-<!--why is there an extra div? How do I code this correctly to select a sour image size? -->
+<!-- I referenced https://www.w3schools.com/html/tryit.asp?filename=tryhtml_images_picture for my "<picture>" elements -->
+<!--Source images not rendering. How do I code this correctly to select a source image size? -->
         <picture id="hero-media">
           <source media="(min-width: 100px)" srcset="images/hero-400x275.png"/>
           <source media="(min-width: 600px)" srcset="images/hero-600x400.png"/>
           <source media="(min-width:800px)" srcset="images/hero-1200x800.png"/>
             <img id="hero-backup" src="images/hero-400x275.png" alt="Hero Image"/>
         </picture>
+<!--I referenced http://html5doctor.com/the-figure-figcaption-elements/ for my "<figcaption>" elements -->
            <figcaption>Placeholder Hero Image. Original by Christina Tovar-Hamernik</figcaption>
       </figure>
   </section>
+<!--The aside section goes here -->
     <aside>
-<!-- To Do - add an h2 text "Design Colors" -->
       <div id="aside-headline">
         <h2>Design Colors</h2>
       </div>
@@ -68,11 +72,12 @@
       </div>
     </aside>
   </main>
-<!-- The content section will contain article sections with nano-degree projects -->
+
+<!--The content section will contain "<article>" sections with nano-degree projects -->
 <section id="content">
   <h2>Featured Work</h2>
   <article class="article-container" id="flex-grid-thirds">
-<!--each article div will display a nano-degree project-->
+<!--each "<article>" div will display a nano-degree project-->
     <div class="article-col" id="article1">
       <figure>
         <picture>
@@ -111,26 +116,30 @@
     </div>
   </article>
 </section>
- <!--The footer container will always be 100% page width-->
+
+ <!--The "<footer>" section goes here -->
 <footer id="contact">
 <!--The #email-contact div contains my avatar, #email-header h2 text-->
 <!--The #email-contact div will be 100% page width up to 599px and 50% page width at 600px-->
   <div class="footer-col" id="email-contact">
     <div class="footer-content" id="avatar-text">
-<!--this is the avatar image-->
+<!--this is the avatar image with-->
       <img src="images/avatar-profile-100x100.png" id="contact-img" alt="my contact image">
-<!--This h2 goes below the avatar image-->
+<!--This "<h2>" goes below the avatar image-->
         <h2 id="email-header">Hi! Contact me for more information.</h2>
     </div>
 <!--The #email-link div contains my #envelope href envelope image and my href email address-->
     <div class="footer-content" id="email-link">
-<!--this is the envelope image-->
+<!-- I used https://www.w3schools.com/html/tryit.asp?filename=tryhtml_images_link to make the footer images links
+I used https://www.w3schools.com/html/tryit.asp?filename=tryhtml_links_target to set my links and images to open in a new browser-->
       <a href="mailto:ctovarhamernik@gmail.com"><img src="images/envelope-65x65.png" id="envelope" alt="envelope icon" height="50"></a>
-<!--this is the hreg email address-->
+<!--this is the href email address-->
       <a href="mailto:ctovarhamernik@gmail.com" id="email-address">ctovarhamernik@gmail.com</a>
     </div>
   </div>
-<!--To Do - how to make the <hr> render as a gradient -->
+ <!-- I referenced https://developer.mozilla.org/en-US/docs/Web/HTML/Element/hr to create a thematic break line
+ instead of using a border but I could not get it to show up with the CSS styling I wanted-->
+<!--To Do - learn how to make the "<hr>" render as a gradient -->
   <!--  <hr>  -->
  <!--The #socialmedia-contact div will be 100% page width up to 599px and 50% page width at 600px-->
   <div class="footer-col" id="socialmedia-contact">
@@ -142,8 +151,8 @@
         <li><a href="https://twitter.com/CTovarHamernik" target="_blank"><img src="images/twitter-65x65.png" alt="twitter icon" height="50"/></a></li>
         <li><a href="https://www.instagram.com" target="_blank"><img src="images/instagram-65x65.png" alt="instagram icon" height="50"/></a></li>
         <li><a href="https://www.linkedin.com/in/Christina-Tovar-Hamernik" target="_blank"><img src="images/linkedin-65x65.png" alt="linkedin icon" height="50"/></a></li>
-<!--To Do - add github link
-               <li><a href="https://github.com/StinaTovar" target="_blank"><img src="images/github-65x65.png" alt="github icon" height="50px"/></a></li>-->
+
+               <li><a href="https://github.com/SoCalChristina" target="_blank"><img src="images/github-65x65.png" alt="github icon" height="50px"/></a></li>
       </ul>
     </div>
   </div>

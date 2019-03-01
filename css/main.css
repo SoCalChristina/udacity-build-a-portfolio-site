@@ -3,6 +3,10 @@
 }
 
 /* This is the body*/
+/** I referenced the following to style my flexbox layout
+https://css-tricks.com/snippets/css/a-guide-to-flexbox/
+https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout/Basic_Concepts_of_Flexbox
+https://www.w3schools.com/css/css3_flexbox.asp **/
 body {
   font: 1em 'Work Sans', sans-serif;
   line-height: 1.5em;
@@ -24,6 +28,7 @@ header {
   border-bottom: .2em solid #5c0009;
   margin: auto;
   line-height: normal;
+/** I referenced https://css-tricks.com/css3-gradients/ to add a gradient backgound to my "<header>" section**/
   background: linear-gradient(to right, white , #398080);
   background-color: #ebebeb; /* For browsers that do not support gradients */
 }
@@ -107,6 +112,7 @@ header {
 }
 
 /* Main section figure */
+/* I referenced http://flexboxgrid.com/ to style my "<figure>" sections */
 #hero-figure {
   display: flex;
   flex-direction: column;
@@ -114,9 +120,10 @@ header {
   margin: auto;
 }
 
+/** I referenced https://www.w3schools.com/tags/tag_picture.asp to style the "<picture>" elements**/
 /* Main section hero image*/
 #hero-media {
-   display: flex;
+  display: flex;
   flex-basis: 100%;
   border: 0.05em solid black;
   box-shadow: .1em .1em .5em grey;
@@ -143,7 +150,7 @@ header {
   padding: 0.5em 0;
 }
 
-/* TODO: add p tag with text */
+/* TODO: add "<p>" element or <section> elements below the design title */
 
 #design-title {
   display: inline-block;
@@ -203,7 +210,7 @@ aside {
   border: none;
 }
 
-/*This section container holds 3 article divs for the portfolio area**/
+/*This "<section>" holds 3 "<article>" divs for the portfolio area**/
 .article-container {
   display: -webkit-flex; /* Safari */
   display: flex;
@@ -340,10 +347,10 @@ a {
   color: #804141;
   font: bold 1.2em;
   align-self: center;
-  align-content:center;
-  justify-content:center;
+  align-content: center;
+  justify-content: center;
   margin: auto;
-  text-decoration:none;
+  text-decoration: none;
   padding-bottom: 0.5em;
 }
 
@@ -364,9 +371,9 @@ padding-top: 1em;
 }
 
 #socialmedia-icons {
-  display:flex;
-  flex-basis:100%;
-  justify-content:center;
+  display: flex;
+  flex-basis: 100%;
+  justify-content: center;
 }
 
 #contact li, #contact img {
@@ -376,11 +383,15 @@ padding-top: 1em;
 }
 
 
-/*Breakpoint 1 300px
-Breakpoint 2 400px
-Breakpoint 3 700px
-Breakpoint 4 (iPad Air): 800px*/
+/**Breakpoint 1 300px
+Breakpoint 2 450px
+Breakpoint 3 500px
+Breakpoint 4 600px*/
 /**
+/** I referenced the following to style my "@media"
+https://www.w3schools.com/css/css_rwd_mediaqueries.asp
+https://www.w3schools.com/css/css3_mediaqueries_ex.asp
+https://developer.mozilla.org/en-US/docs/Web/CSS/Media_Queries/Using_media_queries
 
 /* Page break at 300 */
 @media screen and (min-width: 300px) and (max-width: 699px) {
