@@ -388,10 +388,18 @@ Breakpoint 2 450px
 Breakpoint 3 500px
 Breakpoint 4 600px*/
 /**
+<<<<<<< HEAD
 /** I referenced the following to style my "@media"
 https://www.w3schools.com/css/css_rwd_mediaqueries.asp
 https://www.w3schools.com/css/css3_mediaqueries_ex.asp
 https://developer.mozilla.org/en-US/docs/Web/CSS/Media_Queries/Using_media_queries
+||||||| merged common ancestors
+=======
+/** I referenced the following to style my "@media" 
+https://www.w3schools.com/css/css_rwd_mediaqueries.asp
+https://www.w3schools.com/css/css3_mediaqueries_ex.asp
+https://developer.mozilla.org/en-US/docs/Web/CSS/Media_Queries/Using_media_queries
+>>>>>>> 2504e63520a427b85b0d43e5ca8f1d103af625e2
 
 /* Page break at 300 */
 @media screen and (min-width: 300px) and (max-width: 699px) {
